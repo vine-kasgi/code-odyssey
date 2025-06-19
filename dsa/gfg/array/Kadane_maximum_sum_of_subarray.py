@@ -92,3 +92,34 @@ class Solution:
 # V1
 # Time : O(n)
 # Space : O(1)
+
+# Follow-Up Question -> 1. Print the sub-array also. 
+
+class Solution:
+    def maxSubarray(self,arr):
+        n = len(arr)
+        max_sum = float('-inf')
+        curr_sum = 0
+        start_subarray,end_subarray = -1,-1
+        temp_start = 0
+        
+        for i in range(0,n):
+            curr_sum += arr[i]
+            
+            if curr_sum > max_sum:
+                max_sum = curr_sum
+                start_subarray = temp_start
+                end_subarray = i
+            
+
+            if curr_sum < 0:
+                curr_sum = 0
+                temp_start = i+1
+
+        print(f'The Subarray is {[arr[i] for i in range(start_subarray,end_subarray+1)]}')
+
+        return max_sum
+
+s1 = Solution()
+max_sum = s1.maxSubarray(arr=[2, 3, -8, 7, -1, 2, 3])
+print(f"The maximum sum is : {max_sum}")
