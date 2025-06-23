@@ -44,7 +44,7 @@ Output:
 
 
 select *
-    , case when x = y = z then 'Yes'
+    , case when x = y AND y = z then 'Yes'
         when x+y>z and x+z>y and y+z>x then 'Yes'
         else 'No'
         end as Triangle
