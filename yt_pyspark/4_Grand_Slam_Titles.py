@@ -93,16 +93,16 @@ players_df : DataFrame = spark.createDataFrame(data = players_data, schema = pla
 # create championship df
 championships_df:DataFrame = spark.createDataFrame(data = championships_data,schema = championships_schema)
 
-# # Method 1 : Using unpivot function
-# # unpivot the championship df
-# unpivot_df = championships_df.unpivot("year", ["Wimbledon","Fr_open","Us_open","Au_open"],"championship","player_id")
+# Method 1 : Using unpivot function
+# unpivot the championship df
+unpivot_df = championships_df.unpivot("year", ["Wimbledon","Fr_open","Us_open","Au_open"],"championship","player_id")
 
-# # Join the players df
-# joined_df = players_df.join(unpivot_df, ('player_id'), how= 'left').orderBy(['player_id','year'],ascending = [True,True])
+# Join the players df
+joined_df = players_df.join(unpivot_df, ('player_id'), how= 'left').orderBy(['player_id','year'],ascending = [True,True])
 
-# # Result df
-# result_df = joined_df.groupBy('player_id','player_name').agg(count('championship').alias('grand_slams_count'))
-# result_df.show()
+# Result df
+result_df = joined_df.groupBy('player_id','player_name').agg(count('championship').alias('grand_slams_count'))
+result_df.show()
 
 # Method 2 : Using Union ALL (Least Preferred)
 
