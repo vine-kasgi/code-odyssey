@@ -6,7 +6,7 @@ print(f"The file path is : {file_path}")
 
 # Create Spark Session
 from pyspark.sql import SparkSession,DataFrame
-spark: SparkSession = SparkSession.builder.appName("consecutive_event_summary").getOrCreate()
+spark: SparkSession = SparkSession.builder.appName("match_combination").getOrCreate()
 
 # Required Imports
 from pyspark.sql.functions import length,regexp_replace,split,col,row_number,date_format,to_date,lag,when,coalesce,sum,first,last,lead,avg,count_distinct,count
