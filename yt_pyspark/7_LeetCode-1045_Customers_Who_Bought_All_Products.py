@@ -55,7 +55,7 @@ from pyspark.sql import SparkSession,DataFrame
 spark: SparkSession = SparkSession.builder.appName("Customers_Who_Bought_All_Products").getOrCreate()
 
 # Required Imports
-from pyspark.sql.functions import col,row_number,date_format,to_date,lag,when,coalesce,sum,first,last,lead,avg,count_distinct,count
+from pyspark.sql.functions import col,row_number,date_format,to_date,lag,when,coalesce,sum,first,last,lead,avg,countDistinct,count
 from pyspark.sql.window import Window
 
 # Customer Data
@@ -93,7 +93,7 @@ print(no_of_product)
 customer_df : DataFrame = spark.createDataFrame(data = customer_data,schema=customer_schema)
 
 # Count distinct products purchased per customer
-grouped_customer_count = customer_df.groupBy(col('customer_id')).agg(count_distinct('product_key').alias('count_of_products'))
+grouped_customer_count = customer_df.groupBy(col('customer_id')).agg(countDistinct('product_key').alias('count_of_products'))
 
 # Filter customers who bought all products
 filter_customer = grouped_customer_count.filter(col('count_of_products') == no_of_product).select(col('customer_id'))

@@ -41,7 +41,7 @@ from pyspark.sql import SparkSession,DataFrame
 spark: SparkSession = SparkSession.builder.appName("consecutive_event_summary").getOrCreate()
 
 # Required Imports
-from pyspark.sql.functions import col,row_number,date_format,to_date,lag,when,coalesce,sum,first,last,lead,avg,count_distinct,count
+from pyspark.sql.functions import col,row_number,date_format,to_date,lag,when,coalesce,sum,first,last,lead,avg,countDistinct,count
 from pyspark.sql.window import Window
 
 # Employee Data
