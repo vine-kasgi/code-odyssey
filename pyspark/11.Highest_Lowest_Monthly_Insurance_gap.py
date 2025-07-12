@@ -1,6 +1,7 @@
 """
     🏷️ Title: Max-Min Monthly Issuance Gap by Credit Card
     🟠 Difficulty: Medium
+    🟢 Problem Type: PySpark
     🧾 Problem Statement:
 
         JPMorgan Chase tracks the monthly issuance of its various credit cards across different months and years. 
@@ -52,7 +53,7 @@ from datetime import date
 from pyspark.sql.window import Window
 from pyspark.sql.functions import * # type: ignore
 
-spark = SparkSession.builder.getOrCreate()
+spark : SparkSession = SparkSession.builder.getOrCreate()
 
 # Define schema
 schema = StructType([
