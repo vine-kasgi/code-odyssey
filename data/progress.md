@@ -1,5 +1,50 @@
 # Progress
 
+# 2025-07-12
+- TODO  :
+    - YT_Sql + YT_Pyspark Question (pyspark directory) https://www.youtube.com/playlist?list=PLU8R7xIwX9dBmUEBq-rwUSE6n60K6nYrs
+        - 3/24
+    - Azure Real Time Scenarios https://www.youtube.com/playlist?list=PLMWaZteqtEaLacN3eS3s8pw2jtwBVb1BH
+        - 4/49
+    - Databricks Interview Series https://www.youtube.com/playlist?list=PLgPb8HXOGtsT2uUaujhsFBNENhXVbI0ro
+        - 2/65
+- DONE  :
+    - Data Warehouse Modelling https://www.youtube.com/playlist?list=PLTsNSGeIpGnGP8A74Ie1PgqHhewsqD3fv
+- REDO  :
+    - dsa
+        - gfg
+            - array_duplicates, find_array_leaders,Kadane_maximum_sum_of_subaray, sort_0s,1s,2s
+        - leetcode
+            - 
+    - leetcode_sql
+        - 1979,610
+    - leetcode_pyspark
+        - 1978,610
+    - yt-pyspark
+        - 7/7
+
+# 2025-07-11
+- TODO  :
+    - YT_Sql + YT_Pyspark Question (pyspark directory) https://www.youtube.com/playlist?list=PLU8R7xIwX9dBmUEBq-rwUSE6n60K6nYrs
+        - 2/24
+    - Azure Real Time Scenarios https://www.youtube.com/playlist?list=PLMWaZteqtEaLacN3eS3s8pw2jtwBVb1BH
+        - 4/49
+    - Databricks Interview Series https://www.youtube.com/playlist?list=PLgPb8HXOGtsT2uUaujhsFBNENhXVbI0ro
+        - 2/65
+- DONE  :
+    - Data Warehouse Modelling https://www.youtube.com/playlist?list=PLTsNSGeIpGnGP8A74Ie1PgqHhewsqD3fv
+- REDO  :
+    - dsa
+        - gfg
+            - array_duplicates, find_array_leaders,Kadane_maximum_sum_of_subaray, sort_0s,1s,2s
+        - leetcode
+            - 
+    - leetcode_sql
+        - 1979,610
+    - leetcode_pyspark
+        - 1978,610
+    - yt-pyspark
+        - 7/7
 
 # 2025-07-10
 - TODO  :
