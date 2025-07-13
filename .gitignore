@@ -1,3 +1,7 @@
 spark-warehouse
 .notebooks
-venv
+.notebookslms.db
+*.pyc
+__pycache__/
+venv/
+temp_solution.py
