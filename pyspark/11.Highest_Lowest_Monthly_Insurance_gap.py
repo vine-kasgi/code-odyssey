@@ -28,6 +28,18 @@ Finally, order the results by the difference in descending order, so the card wi
 Each row represents the number of cards issued for a particular card in a given month and year.
 There will be no duplicate records for a given card in the same month and year.
 
+🧾 Sample Input:
+
+| card_name             | issued_amount | issue_month | issue_year |
+| ---------------------- | -------------- | ------------ | ----------- |
+| Chase Freedom Flex     | 55,000         | 1            | 2021        |
+| Chase Freedom Flex     | 60,000         | 2            | 2021        |
+| Chase Freedom Flex     | 65,000         | 3            | 2021        |
+| Chase Freedom Flex     | 70,000         | 4            | 2021        |
+| Chase Sapphire Reserve | 170,000        | 1            | 2021        |
+| Chase Sapphire Reserve | 175,000        | 2            | 2021        |
+| Chase Sapphire Reserve | 180,000        | 3            | 2021        |
+
 ✅ Expected Output:
 
 +--------------------+------------+
