@@ -10,6 +10,8 @@
 # ---
 
 """
+Problem Statement:
+
 JPMorgan Chase tracks the monthly issuance of its various credit cards across different months and years. 
 You're given a table credit_card_issuance containing the monthly number of cards issued for each credit card.
 
